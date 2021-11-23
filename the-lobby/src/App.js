@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css';
 import Header from './Header';
 import PlayerCards from './PlayerCards';
+import SwipeButtons from './SwipeButtons';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
 
       <Header />
       <PlayerCards />
-      {/* SwipeButtons */}
+      <SwipeButtons />
     </div>
   );
 }
