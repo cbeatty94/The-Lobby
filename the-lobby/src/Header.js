@@ -28,7 +28,7 @@ function Header({ backButton }) {
                     alt='Master Chief Lobby Logo'
                 />
             </Link>
-            <Link to="/chat">
+            <Link to="/chats">
                 <IconButton>
                     <ForumIcon fontSize="large" className='header__icon' />
                 </IconButton>

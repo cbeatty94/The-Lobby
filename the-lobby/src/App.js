@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Header from './Header';
 import PlayerCards from './PlayerCards';
 import SwipeButtons from './SwipeButtons';
+import Chats from './Chats';
 
 
 function App() {
@@ -11,14 +12,10 @@ function App() {
     <div className="app">
       <Router>
         <Routes>
-          <Route path="/chat" element={<Header />} >
-            {/* <Header backButton="/" /> */}
-            I am a chat page
+          <Route path="/chats" element={<><Header backButton="/"/><Chats /></>} >
           </Route>
           {/* default route at bottom */}
           <Route path="/" element={<><Header /><PlayerCards /><SwipeButtons /></>} >
-            {/* <PlayerCards />
-            <SwipeButtons /> */}
           </Route>
         </Routes>
 
