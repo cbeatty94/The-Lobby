@@ -5,6 +5,7 @@ import Header from './Header';
 import PlayerCards from './PlayerCards';
 import SwipeButtons from './SwipeButtons';
 import Chats from './Chats';
+import ChatScreen from "./ChatScreen.js"
 
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
     <div className="app">
       <Router>
         <Routes>
+          <Route path="/chats/:person" element={<><Header backButton="/chats"/><ChatScreen /></>} >
+          </Route>
           <Route path="/chats" element={<><Header backButton="/"/><Chats /></>} >
           </Route>
           {/* default route at bottom */}
